@@ -1,0 +1,23 @@
+186 MENU
+{
+ POPUP "Menu"
+ {
+  MENUITEM "Configuración", -25526
+  POPUP "Unidades de disquete"
+  {
+   MENUITEM "Expulsar todos los disquetes", -25523
+   MENUITEM "DF0:", -25522
+   MENUITEM "DF1:", -25521
+   MENUITEM "DF2:", -25520
+   MENUITEM "DF3:", -25519
+  }
+  POPUP "Unidades de CD"
+  {
+   MENUITEM "Expulsar", -25489
+   MENUITEM "CD", -25487
+  }
+  MENUITEM "Reiniciar", -25517
+  MENUITEM "Ayuda", -25525
+  MENUITEM "Abandonar WinUAE", -25524
+ }
+}

@@ -1,0 +1,15 @@
+400 DIALOGEX 0, 0, 396, 85, 0
+STYLE DS_LOCALEDIT | DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | WS_POPUPWINDOW | WS_VISIBLE | WS_CAPTION
+CAPTION "Geometría CHS"
+FONT 8, "MS Sans Serif", 0, FALSE
+{
+ PUSHBUTTON "Aceptar", 1, 59, 57, 135, 15
+ PUSHBUTTON "Cancelar", 2, 201, 57, 135, 15
+ EDITTEXT 1859, 86, 32, 45, 13, ES_AUTOHSCROLL
+ EDITTEXT 1860, 204, 32, 45, 13, ES_AUTOHSCROLL
+ EDITTEXT 1861, 322, 32, 45, 13, ES_AUTOHSCROLL
+ RTEXT "Cilindros:", -1, 27, 33, 45, 9
+ RTEXT "Cabezas:", -1, 145, 33, 45, 9
+ RTEXT "Sectores:", -1, 263, 33, 45, 9
+ CTEXT "Hacer una imagen de una unidad CHS/IDE requiere la geometría exacta. Revisa la etiqueta del volumen", -1, 39, 10, 330, 9
+}

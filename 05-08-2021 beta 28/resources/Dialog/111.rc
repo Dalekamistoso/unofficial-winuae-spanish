@@ -1,0 +1,61 @@
+111 DIALOGEX 0, 0, 396, 316, 0
+STYLE DS_LOCALEDIT | DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, FALSE
+{
+ GROUPBOX "CPU", -1, 1, 1, 129, 163, BS_LEFT
+ AUTORADIOBUTTON "68000", 1200, 8, 19, 63, 10, WS_GROUP
+ AUTORADIOBUTTON "68010", 1201, 8, 32, 63, 10
+ AUTORADIOBUTTON "68020", 1202, 8, 45, 63, 10
+ AUTORADIOBUTTON "68030", 1203, 8, 58, 63, 10
+ AUTORADIOBUTTON "68040", 1204, 8, 71, 63, 10
+ AUTORADIOBUTTON "68060", 1205, 8, 84, 63, 10
+ AUTOCHECKBOX "Direccionamiento de 24-bits", 1222, 8, 98, 119, 12, BS_LEFT | WS_GROUP
+ AUTOCHECKBOX "Más compatible [] 68000: emula prefetch. 68020+: emula prefetch e instrucció de caché. Más compatible per más lento.", 1214, 8, 111, 118, 12, BS_LEFT | WS_GROUP
+ AUTOCHECKBOX "JIT [] Activar emulador de CPU just-in-time. Velocidad de emulación de CPU más rápida. Requiere 68020 o superior.", 1584, 8, 136, 120, 12
+ AUTORADIOBUTTON "Ninguna", 1586, 8, 181, 87, 10, WS_GROUP
+ AUTORADIOBUTTON "EC [] 68EC030, 68EC040 and 68EC060 Transparent Translation Register emulation. Not compatible with JIT.", 1587, 73, 195, 48, 10
+ AUTORADIOBUTTON "MMU [] 68030, 68040 and 68060 MMU emulation. Not compatible with JIT.", 1588, 8, 195, 49, 10
+ AUTOCHECKBOX "Emu de CPU no implementada [] Emula instrucciones de integer no implementadas de 68060 ", 1229, 8, 149, 118, 12, BS_LEFT | WS_GROUP
+ GROUPBOX "FPU", -1, 1, 212, 129, 103, BS_LEFT
+ AUTORADIOBUTTON "Ninguna", 1224, 8, 223, 87, 10, WS_GROUP
+ AUTORADIOBUTTON "68881", 1225, 8, 236, 87, 10
+ AUTORADIOBUTTON "68882", 1226, 8, 249, 87, 10
+ AUTORADIOBUTTON "CPU interna", 1227, 8, 262, 93, 10
+ AUTOCHECKBOX "Más compatible [] Más compatible pero emulación de FPU más lenta.", 1221, 8, 275, 117, 10, BS_LEFT | WS_GROUP
+ AUTOCHECKBOX "Emu de FPU no implementada [] Emula instrucciones de FPU no implementadas", 1228, 8, 287, 116, 10, BS_LEFT | WS_GROUP
+ GROUPBOX "Velocidad de emulación de CPU", -1, 136, 1, 258, 97
+ AUTORADIOBUTTON "La más rápida posible", 1209, 143, 19, 195, 10, BS_LEFT | WS_GROUP
+ AUTORADIOBUTTON "Aproximada al A500/A1200 o bien cycle-exact", 1210, 143, 33, 195, 10, BS_LEFT
+ CONTROL "Slider1", 1223, "msctls_trackbar32", WS_TABSTOP | 0x00000005, 142, 50, 205, 20
+ RTEXT "Vel. de CPU", -1, 141, 77, 46, 9, SS_CENTERIMAGE
+ EDITTEXT 1508, 194, 75, 30, 12, ES_CENTER | ES_READONLY
+ RTEXT "CPU Idle", -1, 230, 77, 41, 9
+ CONTROL "", 1220, "msctls_trackbar32", WS_TABSTOP | 0x00000005, 278, 72, 69, 21
+ GROUPBOX "Velocidad de emulación de CPU Cycle-exact", -1, 136, 100, 258, 42
+ RTEXT "CPU Frequency", -1, 139, 121, 67, 10, SS_CENTERIMAGE
+ COMBOBOX 1791, 215, 120, 89, 75, CBS_DROPDOWNLIST | WS_VSCROLL
+ EDITTEXT 1790, 312, 119, 70, 15
+ GROUPBOX "Opciones PPC CPU", -1, 136, 144, 258, 57
+ AUTOCHECKBOX "Emulación PPC CPU (Blizzard PPC / CyberStorm PPC) [] Configura automáticamente PPC o Blizzard PPC.", 1230, 145, 161, 236, 10, BS_LEFT | WS_GROUP
+ RTEXT "Modo idle de CPU M68K", -1, 180, 183, 121, 9
+ CONTROL "", 1231, "msctls_trackbar32", WS_TABSTOP | 0x00000005, 308, 177, 69, 21
+ GROUPBOX "Opciones de CPU puente x86", -1, 136, 202, 258, 38
+ RTEXT "Velocidad CPU", -1, 147, 221, 55, 9, SS_CENTERIMAGE
+ EDITTEXT 1510, 224, 220, 39, 12, ES_CENTER | ES_READONLY
+ CONTROL "", 1233, "msctls_trackbar32", WS_TABSTOP | 0x00000005, 278, 215, 108, 20
+ GROUPBOX "Ajustes avanzados JIT", -1, 136, 241, 258, 74
+ RTEXT "Tamaño de caché:", -1, 143, 260, 66, 10, SS_CENTERIMAGE
+ CONTROL "Slider1", 1218, "msctls_trackbar32", WS_TABSTOP | 0x00000005, 212, 250, 115, 20
+ EDITTEXT 1509, 331, 255, 30, 12, ES_CENTER | ES_READONLY
+ AUTOCHECKBOX "Soporte FPU", 1580, 143, 273, 71, 11
+ AUTOCHECKBOX "Salto constante", 1579, 221, 273, 71, 11
+ AUTOCHECKBOX "Flujo Hard", 1578, 299, 273, 84, 11
+ AUTORADIOBUTTON "Directa", 1215, 143, 288, 72, 10, WS_GROUP
+ AUTORADIOBUTTON "Indirecta", 1216, 221, 288, 72, 10
+ AUTOCHECKBOX "Sin flags", 1581, 299, 288, 68, 11
+ GROUPBOX "MMU", -1, 2, 168, 129, 42, BS_LEFT
+ AUTOCHECKBOX "Emulación caché de datos [] Caché de datos opcionarl de 68030, 040 y 060. Requiere opción `Más compatible' activa.", 1234, 8, 123, 119, 12, BS_LEFT | WS_GROUP
+ COMBOBOX 1232, 7, 299, 112, 75, CBS_DROPDOWNLIST | WS_VSCROLL
+ AUTOCHECKBOX "Capturar excepción inesperada", 1582, 143, 300, 115, 11
+ EDITTEXT 1511, 356, 75, 30, 12, ES_CENTER | ES_READONLY
+}

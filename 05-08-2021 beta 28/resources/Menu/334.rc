@@ -1,0 +1,49 @@
+334 MENU
+{
+ POPUP "Inactivo"
+ {
+  POPUP "Copiar"
+  {
+   MENUITEM "Copiar línea", -25496
+   MENUITEM "Copiar todo", -25495
+  }
+ }
+ POPUP "Memoria"
+ {
+  POPUP "Copiar"
+  {
+   MENUITEM "Copiar línea", -25496
+   MENUITEM "Copiar todo", -25495
+  }
+  POPUP "stablecer dirección principal"
+  {
+   MENUITEM "Establecer en A0", -25505
+   MENUITEM "Establecer en A1", -25504
+   MENUITEM "Establecer en A2", -25503
+   MENUITEM "Establecer en A3", -25502
+   MENUITEM "Establecer en A4", -25501
+   MENUITEM "Establecer en A5", -25500
+   MENUITEM "Establecer en A6", -25499
+   MENUITEM "Establecer en A7", -25498
+   MENUITEM "Introduce dirección", -25497
+  }
+ }
+ POPUP "Desensamblado"
+ {
+  POPUP "Copiar"
+  {
+   MENUITEM "Copiar línea", -25496
+   MENUITEM "Copiar todo", -25495
+  }
+  POPUP "Puntos de ruptura (Breakpoints)"
+  {
+   MENUITEM "Activar punto de ruptura", -25494
+   MENUITEM "Limpiar todos los puntos de ruptura", -25493
+  }
+  POPUP "Establecer dirección principal"
+  {
+   MENUITEM "Establecer a PC", -25492
+   MENUITEM "Introduce dirección", -25497
+  }
+ }
+}

@@ -1,0 +1,38 @@
+154 DIALOGEX 0, 0, 396, 316, 0
+STYLE DS_LOCALEDIT | DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, FALSE
+{
+ GROUPBOX "Chipset", -1, 1, 20, 212, 136
+ AUTORADIOBUTTON "OCS [] Chipset original. Viene en A1000 y la mayoría de A500s.", 1520, 12, 35, 88, 10, WS_GROUP
+ AUTORADIOBUTTON "ECS Agnus [] Chipset mejorado (solo chip ECS Agnus). CDTV y revisiones de hardware posteriores A500 y A2000.", 1521, 12, 51, 88, 10
+ AUTORADIOBUTTON "ECS completo [] Conjunto de chips ECS completo (chips ECS Agnus y ECS Denise). A500 +, A600 y A3000.", 1523, 12, 67, 88, 10
+ AUTORADIOBUTTON "AGA [] Conjunto de chips de arquitectura gráfica avanzada (AGA). A1200, A4000 y CD32.", 1524, 114, 35, 86, 10
+ AUTORADIOBUTTON "ECS Denise [] Conjunto de chips mejorado (solo chip ECS Denise). Normalmente acompañado con ECS Agnus.", 1522, 114, 51, 86, 10
+ AUTOCHECKBOX "NTSC [] Pantalla estándar de América del Norte y Japón, frecuencia de actualización de 60 Hz. Otros países utilizan PAL (frecuencia de actualización de pantalla de 50 Hz)", 1525, 114, 67, 86, 10
+ AUTOCHECKBOX "Cycle-exact (Completo) [] El modo de emulación A500 / A1200 más compatible.", 1219, 12, 88, 194, 10, BS_LEFT | WS_GROUP
+ AUTOCHECKBOX "Cycle-exact (DMA/Accesos a memoria)", 1846, 12, 101, 194, 10, BS_LEFT | WS_GROUP
+ RTEXT "Chipset Extra:", -1, 38, 128, 71, 15, SS_CENTERIMAGE
+ COMBOBOX 1712, 116, 129, 88, 65, CBS_DROPDOWNLIST | WS_VSCROLL
+ GROUPBOX "Opciones", -1, 221, 20, 173, 137
+ AUTOCHECKBOX "Teclado conectado", 1176, 234, 35, 150, 10
+ AUTOCHECKBOX "Blitter inmediato [] Emulación de blitter más rápida pero menos compatible.", 1174, 234, 62, 150, 10
+ AUTOCHECKBOX "Esperar al Blitter [] Hack de compatibilidad para programas que no esperan el blitter correctamente, causando daños en los gráficos si la CPU es demasiado rápida.", 1175, 234, 75, 150, 10
+ LTEXT "Monitor:", -1, 240, 139, 68, 15, SS_CENTERIMAGE, WS_EX_RIGHT
+ COMBOBOX 1713, 237, 123, 147, 65, CBS_DROPDOWNLIST | WS_VSCROLL
+ GROUPBOX "Nivel de colisión", -1, 1, 161, 393, 48
+ AUTORADIOBUTTON "Ninguno [] Emulación de hardware de colisión deshabilitada.", 1589, 47, 177, 101, 10, WS_GROUP
+ AUTORADIOBUTTON "Solo sprites [] Emula solo colisiones de sprites contra sprites.", 1590, 47, 192, 101, 10
+ AUTORADIOBUTTON "Sprites y Sprites vs playfield [] Nivel de emulación de colisión recomendado.", 1591, 182, 177, 181, 10
+ AUTORADIOBUTTON "Completo [] Emulación de hardware de colisión al 100%. Solo muy pocos juegos necesitan esta opción. El más lento.", 1592, 182, 192, 181, 10
+ GROUPBOX "Genlock", -1, 0, 215, 393, 85
+ AUTOCHECKBOX "Genlock conectado [] Permitir que la secuencia de arranque detecte genlock.", 1220, 13, 231, 109, 10, BS_LEFT | WS_GROUP
+ COMBOBOX 1714, 129, 229, 192, 65, CBS_DROPDOWNLIST | WS_VSCROLL
+ COMBOBOX 1715, 330, 229, 54, 65, CBS_DROPDOWNLIST | WS_VSCROLL
+ AUTOCHECKBOX "Incluir canal alfa en capturas de pantalla y de video.", 1221, 13, 247, 214, 10, BS_LEFT | WS_GROUP
+ COMBOBOX 1853, 12, 278, 356, 75, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL
+ PUSHBUTTON "...", 1854, 375, 277, 10, 15
+ AUTOCHECKBOX "Mantener relación de aspecto", 1222, 13, 262, 214, 10, BS_LEFT | WS_GROUP
+ COMBOBOX 1716, 319, 141, 65, 65, CBS_DROPDOWNLIST | WS_VSCROLL
+ LTEXT "Hard. visualización puerto de video", -1, 241, 105, 117, 15, SS_CENTERIMAGE
+ AUTOCHECKBOX "Emulación de pantalla de subpíxeles", 1177, 234, 48, 150, 10
+}

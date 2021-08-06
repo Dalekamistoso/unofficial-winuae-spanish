@@ -1,0 +1,30 @@
+113 DIALOGEX 0, 0, 396, 316, 0
+STYLE DS_LOCALEDIT | DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE = WS_EX_CONTEXTHELP
+FONT 8, "MS Sans Serif", 0, FALSE
+{
+ CONTROL "List1", 1336, "SysListView32", WS_BORDER | WS_TABSTOP | 0x0000880D, 1, 2, 393, 149
+ PUSHBUTTON "Agregar &directorio o archivo...", 1339, 1, 153, 128, 15
+ PUSHBUTTON "Agregar arc&hivo de disco duro...", 1340, 135, 153, 126, 15
+ PUSHBUTTON "Ag&regar Disco Duro...", 1341, 267, 153, 127, 15
+ PUSHBUTTON "Agregar unidad CD SCSI/IDE ", 1344, 1, 172, 128, 15
+ PUSHBUTTON "Agregar unidad de cinta SCSI/IDE", 1345, 135, 172, 126, 15
+ PUSHBUTTON "&Propiedades", 1334, 267, 172, 60, 15
+ PUSHBUTTON "Quitar", 1335, 334, 172, 60, 15
+ GROUPBOX "Opciones", -1, 1, 189, 393, 66
+ AUTOCHECKBOX "Agrega unidades de PC al inicio", 1507, 9, 200, 201, 11
+ AUTOCHECKBOX "Incluir unidades removibles..", 1510, 9, 213, 201, 11
+ AUTOCHECKBOX "Incluir unidades de red..", 1508, 9, 226, 201, 11
+ AUTOCHECKBOX "CDFS automonta unidades de  CD/DVD", 1509, 9, 239, 201, 11
+ AUTOCHECKBOX "Desactivar soporte UAEFSDB", 1608, 220, 200, 167, 11
+ AUTOCHECKBOX "No usar papelera de  Windows", 1609, 220, 213, 167, 11
+ AUTOCHECKBOX "Automontar unidades removibles []La inserción o extracción del lado de Windows lo montará / quitará inmediatamente en el lado de Amiga.", 1511, 220, 226, 167, 11
+ AUTOCHECKBOX "Limitar tamaño de directorio en unidades a 1G [] Solución alternativa, por ejemplo, instaladores antiguos que calculan el espacio libre incorrectamente si la unidad es grande.", 1512, 220, 239, 167, 11
+ GROUPBOX "Opciones de medios ópticos", -1, 1, 256, 393, 59
+ LTEXT "Unidad/Imagen CD", -1, 5, 268, 70, 10, SS_CENTERIMAGE
+ PUSHBUTTON "Escoge archivo imagen", 1807, 177, 266, 98, 15
+ COMBOBOX 1806, 282, 267, 71, 50, CBS_DROPDOWNLIST | WS_VSCROLL
+ PUSHBUTTON "Expulsa", 1804, 360, 266, 30, 15
+ COMBOBOX 1805, 5, 285, 386, 75, CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL
+ AUTOCHECKBOX "Velocidad de lectura turbo para CDTV/CDTV-CR/CD32", 1513, 11, 301, 201, 11
+}

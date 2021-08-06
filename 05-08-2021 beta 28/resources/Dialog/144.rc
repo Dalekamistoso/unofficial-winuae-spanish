@@ -1,0 +1,27 @@
+144 DIALOGEX 0, 0, 396, 316, 0
+STYLE DS_LOCALEDIT | DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, FALSE
+{
+ GROUPBOX "Al estar activo", -1, 1, 24, 125, 105
+ CTEXT "Ejecutar con prioridad:", 1644, 10, 35, 108, 10, SS_CENTERIMAGE | WS_TABSTOP
+ COMBOBOX 1642, 10, 50, 108, 65, CBS_DROPDOWNLIST | WS_VSCROLL
+ CTEXT "Ratón sin capturar:", -1, 10, 67, 101, 15, SS_CENTERIMAGE
+ AUTOCHECKBOX "Pausar emulación", 1534, 10, 84, 109, 10
+ AUTOCHECKBOX "Desactivar sonido", 1535, 10, 98, 109, 10
+ GROUPBOX "Al estar inactivo", -1, 133, 24, 126, 105
+ CTEXT "Ejecutar con prioridad:", 1635, 144, 35, 107, 10, SS_CENTERIMAGE | WS_TABSTOP
+ COMBOBOX 1643, 144, 50, 108, 65, CBS_DROPDOWNLIST | WS_VSCROLL
+ AUTOCHECKBOX "Pausar emulación", 1529, 143, 84, 109, 10
+ AUTOCHECKBOX "Desactivar sonido", 1528, 143, 98, 109, 10
+ AUTOCHECKBOX "Desactivar disp. de juego", 1532, 143, 112, 109, 10
+ GROUPBOX "Al estar minimizado", -1, 269, 24, 125, 105
+ CTEXT "Ejecutar con prioridad:", 1636, 278, 36, 109, 10, SS_CENTERIMAGE | WS_TABSTOP
+ COMBOBOX 1645, 278, 50, 108, 65, CBS_DROPDOWNLIST | WS_VSCROLL
+ AUTOCHECKBOX "Pausar emulación", 1531, 280, 84, 108, 10
+ AUTOCHECKBOX "Desactivar sonido", 1530, 280, 98, 108, 10
+ AUTOCHECKBOX "Desactivar disp. de juego", 1537, 280, 112, 107, 10
+ GROUPBOX "Asociaciones de archivo", -1, 0, 137, 260, 155
+ CONTROL "", 1789, "SysListView32", WS_BORDER | WS_TABSTOP | 0x0000880D, 9, 154, 238, 108
+ PUSHBUTTON "Asociar todo", 1792, 36, 270, 85, 14
+ PUSHBUTTON "Desaociar todo", 1790, 125, 270, 85, 14
+}

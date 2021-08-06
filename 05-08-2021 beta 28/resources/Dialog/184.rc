@@ -1,0 +1,44 @@
+184 DIALOGEX 0, 0, 396, 316, 0
+STYLE DS_LOCALEDIT | DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, FALSE
+{
+ LTEXT "ROMs de sistema:", 1666, 3, 8, 138, 8, SS_CENTERIMAGE
+ EDITTEXT 1656, 3, 19, 377, 15, ES_AUTOHSCROLL
+ PUSHBUTTON "...", 1661, 384, 19, 11, 15
+ AUTOCHECKBOX "Examinar subcarpetas", 1795, 147, 7, 197, 11
+ LTEXT "Archivos de configuración:", 1667, 3, 38, 134, 8, SS_CENTERIMAGE
+ EDITTEXT 1657, 3, 50, 377, 15, ES_AUTOHSCROLL
+ PUSHBUTTON "...", 1662, 384, 49, 11, 15
+ AUTOCHECKBOX "Archivo config. de caché", 1788, 147, 37, 99, 11
+ LTEXT "Capturas de pantalla:", 1668, 3, 68, 143, 8, SS_CENTERIMAGE
+ EDITTEXT 1658, 3, 79, 377, 15, ES_AUTOHSCROLL
+ PUSHBUTTON "...", 1663, 384, 78, 11, 15
+ LTEXT "Archivos de estado:", 1669, 3, 97, 129, 8, SS_CENTERIMAGE
+ EDITTEXT 1660, 3, 108, 377, 15, ES_AUTOHSCROLL
+ PUSHBUTTON "...", 1664, 384, 107, 11, 15
+ LTEXT "Videos:", 1674, 3, 126, 130, 8, SS_CENTERIMAGE
+ EDITTEXT 1675, 3, 137, 377, 15, ES_AUTOHSCROLL
+ PUSHBUTTON "...", 1676, 384, 136, 11, 15
+ LTEXT "Imagenes de guardado:", 1670, 3, 155, 129, 8, SS_CENTERIMAGE
+ EDITTEXT 1659, 3, 167, 377, 15, ES_AUTOHSCROLL
+ PUSHBUTTON "...", 1665, 384, 166, 11, 15
+ AUTOCHECKBOX "Usar ruta original de la imagen", 1793, 147, 154, 197, 11
+ LTEXT "Ripeos:", 1678, 3, 185, 131, 8, SS_CENTERIMAGE
+ EDITTEXT 1679, 3, 196, 377, 15, ES_AUTOHSCROLL
+ PUSHBUTTON "...", 1680, 383, 195, 11, 15
+ PUSHBUTTON "Ajustes por defecto", 1671, 2, 218, 92, 14
+ PUSHBUTTON "Re-examinar ROMs", 1672, 2, 235, 92, 14
+ COMBOBOX 1704, 99, 219, 163, 150, CBS_DROPDOWNLIST | CBS_HASSTRINGS | WS_VSCROLL
+ PUSHBUTTON "Limpiar historial de disco", 1677, 99, 235, 92, 14
+ AUTOCHECKBOX "Usar rutas relativas", 1789, 199, 237, 94, 11
+ PUSHBUTTON "Limpiar registro", 1673, 302, 218, 92, 14
+ AUTOCHECKBOX "Modo portable", 1792, 303, 237, 82, 11
+ GROUPBOX "Registro de depuración", -1, 1, 254, 393, 53
+ COMBOBOX 1705, 7, 269, 137, 150, CBS_DROPDOWNLIST | CBS_HASSTRINGS | WS_VSCROLL
+ AUTOCHECKBOX "Habilitar registro completo", 1790, 151, 270, 93, 12
+ AUTOCHECKBOX "Ventana registro", 1791, 254, 270, 68, 12
+ PUSHBUTTON "Guardar todo [] Cree un archivo zip que incluya tanto los registros como el archivo de configuración.", 1684, 337, 270, 51, 14
+ PUSHBUTTON "Abrir [] Abrir archivo seleccionado.", 1681, 337, 286, 51, 14
+ EDITTEXT 1814, 7, 287, 324, 13, ES_READONLY
+ AUTOCHECKBOX "Cachear archivos de Boxart", 1796, 267, 37, 125, 11
+}
